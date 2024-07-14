@@ -2,6 +2,9 @@
 # Developed by: MasterkinG32
 # Date: 2024
 # Github: https://github.com/masterking32
+# Updated by: curtishdev
+# Date: 2024
+# Github: https://github.com/curtishdev
 
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Headers: *');
@@ -14,6 +17,7 @@ header('Content-Type: application/javascript');
 header('Cache-Control: max-age=3600');
 
 // Get content from "https://hamsterkombatgame.io/js/telegram-web-app.js"
+// New domain fixed
 $telegram_web_app = file_get_contents('https://hamsterkombatgame.io/js/telegram-web-app.js');
 
 $telegram_web_app = str_replace("return webAppPlatform;", 'return "ios";', $telegram_web_app);
